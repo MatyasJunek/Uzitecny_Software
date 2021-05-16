@@ -1,4 +1,5 @@
-# Seznam aut
+# Seznam aut, verze 1.0
+
 ## Záměr
 Aplikace bude seznam, který slouží uživateli k přehlednému a jednoduchému prohlížení a porovnání aut,
 
