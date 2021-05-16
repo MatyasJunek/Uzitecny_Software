@@ -22,8 +22,8 @@ namespace WpfProject
     {
         
         public Cars currentCar = new Cars();
-        public Cars car1 = new Cars();
-        public Cars car2 = new Cars();
+        public static Cars car1 = new Cars();
+        public static Cars car2 = new Cars();
 
         int index = 1;
         public MainWindow()
@@ -59,6 +59,9 @@ namespace WpfProject
             {
                 car2 = cs;
                 index = 1;
+                CarProportions carProportions = new CarProportions(car1, car2);
+                carProportions.DataContext = this;
+                carProportions.ShowDialog();
             }
 
         }
