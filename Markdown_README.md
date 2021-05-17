@@ -1,24 +1,40 @@
 # Seznam aut, verze 1.0
 
-## Záměr
-Aplikace bude seznam, který slouží uživateli k přehlednému a jednoduchému prohlížení a porovnání aut,
+Matyáš Junek
 
-protože jsou různá auto uložena na různých stránkách a je zbytečné mít otevřených spoustu oken. Aplikace byměla být přehledná a lehce použitelná.
+junek.matyas@centrum.cz
 
+16.5. 2021
 
-## Návrh
-Aplikace by měla mít tři okna. Hlavní okno bude rychlý přehled aut, kde budou vidět podrobná specifikace jednotlivých vozů.
-
-Druhé okno slouží k přidání auta do seznamu, který se v reálném čase aktualizuje.
-
-Třetí okno(dvouklik na dvě auta) má za úkol uživateli porovnat vybraná auta. Zvýrazní pomocí barev lepší a horší parametry. 
-
-## Kód
-Kód je uložen [zde](https://github.com/MatyasJunek/Uzitecny_Software.git)
-
-## Testy
-Nejdříve se testovalo kopírování odkazu na auto, které nejdříve nefungovalo. Problém byl vyřešen vyřešen a kopírování odkazu funguje.
-
-U hlavního okna, ani u okna pro přidání auta žádný problém nevznikl.
-
-Další problém vznikl při předávání proměnných z hlavního okna do porovnávacího okna, který se byl ale také vyřešen
+* Úvod
+  * Účel dokumentu
+      * Účelem tohoto dokumentu bude vytvoření WPF aplikace, která vytvoří přehledný seznam aut.
+  * Kontakty
+      * Matyáš Junek, junek.matyas@centrum.cz, tel. *číslo*
+  * Pro koho je dokument určený
+      * Program je určený pro širokou škálu uživatelů, kteří si chtějí vybrat auto, ale nechtějí mít otevřených spoustu oken v prohlížeči
+  * Odkazy na ostatní dokumenty
+      * https://www.autolist.com/
+ * Celkový popis
+   * Funkce
+      * Aplikace uživateli dovolí si zjišťovat informace o rozkliknutém voze
+      * Uživatel bude moci přidávat auta do seznamu
+      * Po dvoukliknutí na dvě auta se otevře okno, ve kterém se budou auta poměřovat
+    * Uživatelské skupiny
+      * Člověk, který si chce koupit nové auto
+ * Požadavky na rozhraní
+    * Uživatelská rozhraní
+      * Windows Presentation Foundation
+    * Softwarová rozhraní
+      * Windows
+ * Vlastnosti systému
+    1. Hlavní okno
+     * Prohlížení aut
+     * Specifikace aut (Značka, model, rok atd.)
+    2. Přidání auta
+     * Formulář pro přidání auta do seznamu
+    3. Porovnávání aut
+     * Zde jsou dvě vybraná auta, které si uživatel může zblízka prohlédnout a porovnat
+ * Nefunkční požadavky
+  * Uložení dat
+      * Program si zatím nepamatuje nově přidaná auta povypnutí aplikace (účel verze 1.1)
