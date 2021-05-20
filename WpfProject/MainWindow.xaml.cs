@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.IO;
 
 namespace WpfProject
 {
@@ -37,6 +38,7 @@ namespace WpfProject
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
             CarsL.SelectedIndex = 0;
+          
         }
         private void Cars_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
@@ -60,7 +62,6 @@ namespace WpfProject
                 car2 = cs;
                 index = 1;
                 CarProportions carProportions = new CarProportions(car1, car2);
-                carProportions.DataContext = this;
                 carProportions.ShowDialog();
             }
 
