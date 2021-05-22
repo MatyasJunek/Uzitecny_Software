@@ -1,0 +1,91 @@
+﻿<Window x:Class="WpfProject.CarEdit"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfProject"
+        mc:Ignorable="d"
+        Title="CarEdit" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="0.5*"/>
+
+        </Grid.RowDefinitions>
+
+        <StackPanel Grid.Row="0" Grid.Column="0">
+            <Label Content="Značka:"/>
+            <TextBox Text="{Binding Brand}" Margin="20, 0" />
+        </StackPanel>
+
+        <StackPanel Grid.Row="1" Grid.Column="0">
+            <Label Content="Model:"/>
+            <TextBox Text="{Binding Model}" Margin="20, 0" />
+        </StackPanel>
+        <StackPanel Grid.Row="2" Grid.Column="0">
+            <Label Content="Rok výroby:"/>
+            <TextBox Text="{Binding Year}" Margin="20, 0" />
+        </StackPanel>
+        <StackPanel Grid.Row="3" Grid.Column="0">
+            <Label Content="Cena:"/>
+            <TextBox Text="{Binding Prize}" Margin="20, 0" />
+        </StackPanel>
+        <StackPanel Grid.Row="4" Grid.Column="0">
+            <Label Content="Karoserie:"/>
+            <ComboBox Text="{Binding Body}" Margin="20, 0">
+                <ComboBoxItem Content="Combi"/>
+                <ComboBoxItem Content="SUV"/>
+                <ComboBoxItem Content="Kupé"/>
+                <ComboBoxItem Content="Hatchback"/>
+                <ComboBoxItem Content="Sedan"/>
+                <ComboBoxItem Content="MPV"/>
+                <ComboBoxItem Content="Kabriolet"/>
+                <ComboBoxItem Content="Pickup"/>
+                <ComboBoxItem Content="Bus"/>
+                <ComboBoxItem Content="Dodávka"/>
+                <ComboBoxItem Content="Odtahovka"/>
+            </ComboBox>
+        </StackPanel>
+        <StackPanel Grid.Row="0" Grid.Column="1">
+            <Label Content="Převodovka:"/>
+            <ComboBox Text="{Binding Transmission}" Margin="20, 0">
+                <ComboBoxItem Content="Manuál"/>
+                <ComboBoxItem Content="Automat"/>
+            </ComboBox>
+        </StackPanel>
+        <StackPanel Grid.Row="1" Grid.Column="1">
+            <Label Content="Palivo:"/>
+            <ComboBox Text="{Binding Fuel}" Margin="20, 0">
+                <ComboBoxItem Content="Benzín"/>
+                <ComboBoxItem Content="Diesel"/>
+                <ComboBoxItem Content="LPG"/>
+                <ComboBoxItem Content="CNG"/>
+                <ComboBoxItem Content="Hybrid"/>
+                <ComboBoxItem Content="Ethanol"/>
+                <ComboBoxItem Content="Elektromotor"/>
+            </ComboBox>
+        </StackPanel>
+        <StackPanel Grid.Row="2" Grid.Column="1">
+            <Label Content="Najeto:"/>
+            <TextBox Text="{Binding Speedometer}" Margin="20, 0" />
+        </StackPanel>
+        <StackPanel Grid.Row="3" Grid.Column="1">
+            <Label Content="Motor:"/>
+            <TextBox Text="{Binding Engine}" Margin="20, 0" />
+        </StackPanel>
+        <StackPanel Grid.Row="4" Grid.Column="1">
+            <Label Content="Url:"/>
+            <TextBox Text="{Binding Url}" Margin="20, 0" />
+        </StackPanel>
+        <Button x:Name="EditCar" Content="Upravit auto" Grid.Row="5" Grid.Column="1" Click="EditCar_Click"/>
+        <Button x:Name="DeleteCar" Content="Vymazat auto" Grid.Row="5" Grid.Column="0" Click="DeleteCar_Click"/>
+    </Grid>
+</Window>

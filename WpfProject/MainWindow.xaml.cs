@@ -38,7 +38,6 @@ namespace WpfProject
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
             CarsL.SelectedIndex = 0;
-          
         }
         private void Cars_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
@@ -76,6 +75,13 @@ namespace WpfProject
         {
             CarAdd ca = new CarAdd();
             ca.ShowDialog();
+        }
+     
+        private void EditCar_Click(object sender, RoutedEventArgs e)
+        {
+            CarEdit ce = new CarEdit(currentCar);
+            ce.ShowDialog();
+            CarsL.SelectedIndex = 0;
         }
     }
 }
