@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:WpfProject"
         xmlns:p="http://schemas.microsoft.com/winfx/2006/xaml"
         mc:Ignorable="d"
-        Title="CarAdd" Height="450" Width="800">
+        Title="CarAdd" Height="450" Width="800" FontFamily="Simplex" Background="BlanchedAlmond">
     <Grid>
 
         <Grid.ColumnDefinitions>
@@ -25,24 +25,24 @@
 
         <StackPanel Grid.Row="0" Grid.Column="0">
             <Label Content="Značka:"/>
-            <TextBox Text="{Binding Brand}" Margin="20, 0" />
+            <TextBox x:Name="tb_brand" Text="{Binding Brand, UpdateSourceTrigger=PropertyChanged}" Margin="20, 0" Background="AliceBlue" TextChanged="tb_brand_TextChanged"/>
         </StackPanel>
 
         <StackPanel Grid.Row="1" Grid.Column="0">
             <Label Content="Model:"/>
-            <TextBox Text="{Binding Model}" Margin="20, 0" />
+            <TextBox x:Name="tb_model" Text="{Binding Model, UpdateSourceTrigger=PropertyChanged}" Margin="20, 0" Background="AliceBlue" TextChanged="tb_model_TextChanged"/>
         </StackPanel>
         <StackPanel Grid.Row="2" Grid.Column="0">
             <Label Content="Rok výroby:"/>
-            <TextBox Text="{Binding Year}" Margin="20, 0" />
+            <ComboBox x:Name="Year_Combo"  Text="{Binding Year}" Margin="20, 0" Background="AliceBlue"/>
         </StackPanel>
         <StackPanel Grid.Row="3" Grid.Column="0">
             <Label Content="Cena:"/>
-            <TextBox Text="{Binding Prize}" Margin="20, 0" />
+            <TextBox x:Name="tb_prize" Text="{Binding Prize, UpdateSourceTrigger=PropertyChanged}" Margin="20, 0" Background="AliceBlue" PreviewTextInput="tb_prize_PreviewTextInput"  DataObject.Pasting="tb_prize_Pasting" TextChanged="tb_prize_TextChanged"/>
         </StackPanel>
         <StackPanel Grid.Row="4" Grid.Column="0">
             <Label Content="Karoserie:"/>
-            <ComboBox Text="{Binding Body}" Margin="20, 0">
+            <ComboBox Text="{Binding Body}" Margin="20, 0" Background="AliceBlue" SelectedIndex="0">
                 <ComboBoxItem Content="Combi"/>
                 <ComboBoxItem Content="SUV"/>
                 <ComboBoxItem Content="Kupé"/>
@@ -58,14 +58,14 @@
         </StackPanel>
         <StackPanel Grid.Row="0" Grid.Column="1">
             <Label Content="Převodovka:"/>
-            <ComboBox Text="{Binding Transmission}" Margin="20, 0">
-                <ComboBoxItem Content="Manuální"/>
-                <ComboBoxItem Content="Automatická"/>
+            <ComboBox Text="{Binding Transmission}" Margin="20, 0" Background="AliceBlue" SelectedIndex="0">
+                <ComboBoxItem Content="Manuál"/>
+                <ComboBoxItem Content="Automat"/>
             </ComboBox>
         </StackPanel>
         <StackPanel Grid.Row="1" Grid.Column="1">
             <Label Content="Palivo:"/>
-            <ComboBox Text="{Binding Fuel}" Margin="20, 0">
+            <ComboBox Text="{Binding Fuel}" Margin="20, 0" Background="AliceBlue" SelectedIndex="0">
                 <ComboBoxItem Content="Benzín"/>
                 <ComboBoxItem Content="Diesel"/>
                 <ComboBoxItem Content="LPG"/>
@@ -77,16 +77,17 @@
         </StackPanel>
         <StackPanel Grid.Row="2" Grid.Column="1">
             <Label Content="Najeto:"/>
-            <TextBox Text="{Binding Speedometer}" Margin="20, 0" />
+            <TextBox x:Name="tb_speed" Text="{Binding Speedometer, UpdateSourceTrigger=PropertyChanged}" Margin="20, 0" Background="AliceBlue" PreviewTextInput="tb_speed_PreviewTextInput"  DataObject.Pasting="tb_speed_Pasting" TextChanged="tb_speed_TextChanged"/>
         </StackPanel>
         <StackPanel Grid.Row="3" Grid.Column="1">
             <Label Content="Motor:"/>
-            <TextBox Text="{Binding Engine}" Margin="20, 0" />
+            <TextBox x:Name="tb_engine" Text="{Binding Engine, UpdateSourceTrigger=PropertyChanged}" Margin="20, 0" Background="AliceBlue" TextChanged="tb_engine_TextChanged"/>
         </StackPanel>
         <StackPanel Grid.Row="4" Grid.Column="1">
             <Label Content="Url:"/>
-            <TextBox Text="{Binding Url}" Margin="20, 0" />
+            <TextBox x:Name="tb_url" Text="{Binding Url, UpdateSourceTrigger=PropertyChanged}" Margin="20, 0" Background="AliceBlue" TextChanged="tb_url_TextChanged"/>
         </StackPanel>
-        <Button x:Name="AddCar" Content="Přidat auto" Grid.Row="5" Grid.Column="2" Click="AddCar_Click"/>
+        <Button x:Name="AddCar" Content="Přidat auto" Grid.Row="5" Grid.Column="2" Click="AddCar_Click" Opacity="0.8"/>
+        <Button x:Name="Exit" Content="Zpět" Grid.Row="9" Grid.Column="0" Click="Exit_Click"  Opacity="0.8"/>
     </Grid>
 </Window>

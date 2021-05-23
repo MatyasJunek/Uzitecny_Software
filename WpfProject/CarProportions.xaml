@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfProject"
         mc:Ignorable="d"
-        Title="CarProportions" Height="450" Width="800" Loaded="Window_Loaded">
+        Title="CarProportions" Height="450" Width="1000" Loaded="Window_Loaded" FontFamily="Simplex" Background="BlanchedAlmond" MinWidth="1000" MinHeight="450">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*"/>
@@ -25,73 +25,73 @@
             </Grid.RowDefinitions>
         
         <StackPanel Grid.Row="0" Grid.Column="0" Orientation="Horizontal" TextBlock.FontSize="30">
-            <TextBlock x:Name="c1_Brand" Text=""/>
+            <TextBlock x:Name="c1_Brand" Text="{Binding Brand}"/>
             <TextBlock  Text=" "/>
-            <TextBlock x:Name="c1_Model" Text=""/>
+            <TextBlock x:Name="c1_Model" Text="{Binding Model}"/>
             <TextBlock Text=", " FontSize="30"/>
-            <TextBlock x:Name="c1_Year" Text=""/>
+            <TextBlock x:Name="c1_Year" Text="{Binding Year}"/>
         </StackPanel>
         <StackPanel Grid.Row="1" Grid.Column="0" Orientation="Horizontal" TextBlock.FontSize="15">
             <TextBlock Text="Cena: "/>
-            <TextBlock x:Name="c1_Prize" Text=""/>
+            <TextBlock x:Name="c1_Prize" Text="{Binding Prize}"/>
         </StackPanel>
         <StackPanel Grid.Row="2" Grid.Column="0" Orientation="Horizontal" TextBlock.FontSize="15">
             <TextBlock Text="Karoserie: "/>
-            <TextBlock x:Name="c1_Body" Text=""/>
+            <TextBlock x:Name="c1_Body" Text="{Binding Body}"/>
         </StackPanel>
         <StackPanel Grid.Row="3" Grid.Column="0" Orientation="Horizontal" TextBlock.FontSize="15">
             <TextBlock Text="Převodovka: "/>
-            <TextBlock x:Name="c1_Transmission" Text=""/>
+            <TextBlock x:Name="c1_Transmission" Text="{Binding Transmission}"/>
         </StackPanel>
         <StackPanel Grid.Row="4" Grid.Column="0" Orientation="Horizontal" TextBlock.FontSize="15">
             <TextBlock Text="Palivo: "/>
-            <TextBlock x:Name="c1_Fuel" Text=""/>
+            <TextBlock x:Name="c1_Fuel" Text="{Binding Fuel}"/>
         </StackPanel>
         <StackPanel Grid.Row="5" Grid.Column="0" Orientation="Horizontal" TextBlock.FontSize="15">
             <TextBlock Text="Najeto: "/>
-            <TextBlock x:Name="c1_Speedometer" Text=""/>
+            <TextBlock x:Name="c1_Speedometer" Text="{Binding Speedometer}"/>
             <TextBlock Text=" km"/>
         </StackPanel>
         <StackPanel Grid.Row="6" Grid.Column="0" Orientation="Horizontal" TextBlock.FontSize="15">
             <TextBlock Text="Motor: "/>
-            <TextBlock x:Name="c1_Engine" Text=""/>
+            <TextBlock x:Name="c1_Engine" Text="{Binding Engine}"/>
         </StackPanel>
         
         
 
         <StackPanel Grid.Row="0" Grid.Column="1" Orientation="Horizontal" TextBlock.FontSize="30">
-            <TextBlock x:Name="c2_Brand" Text=""/>
+            <TextBlock x:Name="c2_Brand" Text="{Binding Brand}"/>
             <TextBlock  Text=" "/>
-            <TextBlock x:Name="c2_Model" Text=""/>
+            <TextBlock x:Name="c2_Model" Text="{Binding Model}"/>
             <TextBlock Text=", " FontSize="30"/>
-            <TextBlock x:Name="c2_Year" Text=""/>
+            <TextBlock x:Name="c2_Year" Text="{Binding Year}"/>
         </StackPanel>
         <StackPanel Grid.Row="1" Grid.Column="1" Orientation="Horizontal" TextBlock.FontSize="15">
             <TextBlock Text="Cena: "/>
-            <TextBlock x:Name="c2_Prize" Text=""/>
+            <TextBlock x:Name="c2_Prize" Text="{Binding Prize}"/>
         </StackPanel>
         <StackPanel Grid.Row="2" Grid.Column="1" Orientation="Horizontal" TextBlock.FontSize="15">
             <TextBlock Text="Karoserie: "/>
-            <TextBlock x:Name="c2_Body" Text=""/>
+            <TextBlock x:Name="c2_Body" Text="{Binding Body}"/>
         </StackPanel>
         <StackPanel Grid.Row="3" Grid.Column="1" Orientation="Horizontal" TextBlock.FontSize="15">
             <TextBlock Text="Převodovka: "/>
-            <TextBlock x:Name="c2_Transmission" Text=""/>
+            <TextBlock x:Name="c2_Transmission" Text="{Binding Transmission}"/>
         </StackPanel>
         <StackPanel Grid.Row="4" Grid.Column="1" Orientation="Horizontal" TextBlock.FontSize="15">
             <TextBlock Text="Palivo: "/>
-            <TextBlock x:Name="c2_Fuel" Text=""/>
+            <TextBlock x:Name="c2_Fuel" Text="{Binding Fuel}"/>
         </StackPanel>
         <StackPanel Grid.Row="5" Grid.Column="1" Orientation="Horizontal" TextBlock.FontSize="15">
             <TextBlock Text="Najeto: "/>
-            <TextBlock x:Name="c2_Speedometer" Text=""/>
+            <TextBlock x:Name="c2_Speedometer" Text="{Binding Speedometer}"/>
             <TextBlock Text=" km"/>
         </StackPanel>
         <StackPanel Grid.Row="6" Grid.Column="1" Orientation="Horizontal" TextBlock.FontSize="15">
             <TextBlock Text="Motor: "/>
-            <TextBlock x:Name="c2_Engine" Text=""/>
+            <TextBlock x:Name="c2_Engine" Text="{Binding Engine}"/>
         </StackPanel>
 
-        <Button x:Name="Exit" Content="Zpět" Grid.Row="9" Grid.Column="0" Click="Exit_Click"/>
+        <Button x:Name="Exit" Content="Zpět" Grid.Row="9" Grid.Column="0" Click="Exit_Click" Opacity="0.8"/>
     </Grid>
 </Window>

@@ -5,7 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfProject"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800" Loaded="Window_Loaded">
+        Title="MainWindow" Height="450" Width="800" Loaded="Window_Loaded" MinWidth="800" MinHeight="450" FontFamily="Simplex" Background="BlanchedAlmond">
+   
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="0.5*"/>
@@ -23,11 +24,11 @@
             <RowDefinition Height="*"/>
             <RowDefinition Height="*"/>
             <RowDefinition Height="*"/>
-            
+
         </Grid.RowDefinitions>
 
         <ListBox Name="CarsL" Grid.Column="0" Grid.RowSpan="5"
-                  SelectionChanged="Cars_SelectionChanged" ItemsSource="{Binding AllCars}" MouseDoubleClick="Cars_MouseDoubleClick">
+                  SelectionChanged="Cars_SelectionChanged" ItemsSource="{Binding AllCars}" MouseDoubleClick="Cars_MouseDoubleClick" Background="AliceBlue">
             <ListBox.ItemTemplate>
                 <DataTemplate>
                     <StackPanel Orientation="Horizontal">
@@ -73,9 +74,10 @@
             <TextBlock Text="Motor: "/>
             <TextBlock Text="{Binding Engine}"/>
         </StackPanel>
-        <Button x:Name="CopyUrl" Content="Kopírovat odkaz" Grid.Row="7" Grid.Column="1" Click="CopyUrl_Click" Height="35" Width="90" HorizontalAlignment="Left"/>
-        <Button x:Name="EditCar" Content="Upravit auto" Grid.Row="10" Grid.Column="1" Click="EditCar_Click"  HorizontalAlignment="Left"/>
-        <Button x:Name="AddCar" Content="Přidat auto" Grid.Row="10" Grid.Column="1" Click="AddCar_Click"  HorizontalAlignment="Right"/>
-        
+        <Button x:Name="CopyUrl" Content="Kopírovat odkaz" Grid.Row="7" Grid.Column="1" Click="CopyUrl_Click" Height="35" Width="200" HorizontalAlignment="Left" Opacity="0.8"/>
+        <Button x:Name="EditCar" Content="Upravit auto" Grid.Row="10" Grid.Column="1" Click="EditCar_Click"  HorizontalAlignment="Left" Width="200" Opacity="0.8"/>
+        <Button x:Name="AddCar" Content="Přidat auto" Grid.Row="10" Grid.Column="1" Click="AddCar_Click"  HorizontalAlignment="Right" Width="200" Opacity="0.8"/>
+
+
     </Grid>
 </Window>

@@ -30,25 +30,27 @@ namespace WpfProject
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
-            c1_Brand.Text = car1.Brand;
-            c1_Model.Text = car1.Model;
-            c1_Year.Text = car1.Year.ToString();
-            c1_Prize.Text = car1.Prize.ToString();
-            c1_Body.Text = car1.Body;
-            c1_Transmission.Text = car1.Transmission;
-            c1_Fuel.Text = car1.Fuel;
-            c1_Speedometer.Text = car1.Speedometer.ToString();
-            c1_Engine.Text = car1.Engine;
+            DataContext = car1;
+            c1_Brand.DataContext = DataContext;
+            c1_Model.DataContext = DataContext;
+            c1_Year.DataContext = DataContext;
+            c1_Prize.DataContext = DataContext;
+            c1_Body.DataContext = DataContext;
+            c1_Transmission.DataContext = DataContext;
+            c1_Fuel.DataContext = DataContext;
+            c1_Speedometer.DataContext = DataContext;
+            c1_Engine.DataContext = DataContext;
 
-            c2_Brand.Text = car2.Brand;
-            c2_Model.Text = car2.Model;
-            c2_Year.Text = car2.Year.ToString();
-            c2_Prize.Text = car2.Prize.ToString();
-            c2_Body.Text = car2.Body;
-            c2_Transmission.Text = car2.Transmission;
-            c2_Fuel.Text = car2.Fuel;
-            c2_Speedometer.Text = car2.Speedometer.ToString();
-            c2_Engine.Text = car2.Engine;
+            DataContext = car2;
+            c2_Brand.DataContext = DataContext;
+            c2_Model.DataContext = DataContext;
+            c2_Year.DataContext = DataContext;
+            c2_Prize.DataContext = DataContext;
+            c2_Body.DataContext = DataContext;
+            c2_Transmission.DataContext = DataContext;
+            c2_Fuel.DataContext = DataContext;
+            c2_Speedometer.DataContext = DataContext;
+            c2_Engine.DataContext = DataContext;
 
             if (car1.Prize < car2.Prize)
             {

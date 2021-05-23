@@ -84,6 +84,19 @@ namespace WpfProject
         {
 
         }
+        public Cars(string brand, string model, int year, int prize, string body, string transmission, string fuel, int speedometer, string engine, string url)
+        {
+            Brand = brand;
+            Model = model;
+            Year = year;
+            Prize = prize;
+            Body = body;
+            Transmission = transmission;
+            Fuel = fuel;
+            Speedometer = speedometer;
+            Engine = engine;
+            Url = url;
+        }
         public static void InitCars()
         {
             string line;
