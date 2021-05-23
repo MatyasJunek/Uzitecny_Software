@@ -1,4 +1,4 @@
-# Seznam aut, verze 1.0
+# Seznam aut, verze 2.3
 
 Matyáš Junek
 
@@ -31,10 +31,8 @@ junek.matyas@centrum.cz
     1. Hlavní okno
      * Prohlížení aut
      * Specifikace aut (Značka, model, rok atd.)
+     * Kopírování odkazu k autu
     2. Přidání auta
      * Formulář pro přidání auta do seznamu
     3. Porovnávání aut
      * Zde jsou dvě vybraná auta, které si uživatel může zblízka prohlédnout a porovnat
- * Nefunkční požadavky
-  * Uložení dat
-      * Program si zatím nepamatuje nově přidaná auta povypnutí aplikace (účel verze 1.1)
