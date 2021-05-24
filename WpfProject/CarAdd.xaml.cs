@@ -63,13 +63,12 @@ namespace WpfProject
         {
 
             Cars.AllCars.Add((Cars)DataContext);
-            using (StreamWriter tw = new StreamWriter("cars.txt"))
+            using (StreamWriter sw = new StreamWriter("cars.txt"))
             {
                 foreach (var item in Cars.AllCars)
                 {
-                    tw.WriteLine(string.Format("{0},{1},{2},{3},{4},{5},{6},{7},{8},{9}", item.Brand, item.Model, item.Year, item.Prize, item.Body, item.Transmission, item.Fuel, item.Speedometer, item.Engine, item.Url));
+                    sw.WriteLine(string.Format("{0},{1},{2},{3},{4},{5},{6},{7},{8},{9}", item.Brand, item.Model, item.Year, item.Prize, item.Body, item.Transmission, item.Fuel, item.Speedometer, item.Engine, item.Url));
                 }
-                tw.Close();
             }
             this.Close();
         }
