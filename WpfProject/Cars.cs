@@ -124,7 +124,7 @@ namespace WpfProject
                     Transmission = "Automat",
                     Fuel = "Benzín",
                     Speedometer = 22635,
-                    Engine = "1.5 TSI, 110kW",
+                    Engine = "1.5 TSI 110kW",
                     Url = "https://www.aaaauto.cz/cz/skoda-octavia/car.html?id=393042078#make=109&model=261&ymin=2020&promo=b"
                 });
                 AllCars.Add(new Cars
@@ -137,7 +137,7 @@ namespace WpfProject
                     Transmission = "Automat",
                     Fuel = "Diesel",
                     Speedometer = 33158,
-                    Engine = "2.0 TDI, 110kW",
+                    Engine = "2.0 TDI 110kW",
                     Url = "https://www.aaaauto.cz/cz/vw-passat/car.html?id=395673047#make=131&model=268&ymin=2018&promo=gm"
                 });
                 AllCars.Add(new Cars
@@ -150,7 +150,7 @@ namespace WpfProject
                     Transmission = "Automat",
                     Fuel = "Diesel",
                     Speedometer = 83579,
-                    Engine = "530d GT, 190kW, 4x4",
+                    Engine = "530d GT, 190kW 4x4",
                     Url = "https://www.aaaauto.cz/cz/bmw-5gt/car.html?id=392944336#make=15&model=20033&ymin=2015&promo=gm"
                 });
                 AllCars.Add(new Cars
@@ -163,7 +163,7 @@ namespace WpfProject
                     Transmission = "Automat",
                     Fuel = "Benzín",
                     Speedometer = 3354,
-                    Engine = "3.8 V6, 419kW, 4x4",
+                    Engine = "3.8 V6, 419kW 4x4",
                     Url = "https://www.aaaauto.cz/cz/nissan-gt-r/car.html?id=392785695#promo=b"
                 });
                 AllCars.Add(new Cars
@@ -176,7 +176,7 @@ namespace WpfProject
                     Transmission = "Automat",
                     Fuel = "Diesel",
                     Speedometer = 168269,
-                    Engine = "D5, 147kW, 4x4",
+                    Engine = "D5, 147kW 4x4",
                     Url = "https://www.aaaauto.cz/cz/volvo-xc90/car.html?id=382823123#make=130&promo=gm"
                 });
                 AllCars.Add(new Cars
@@ -189,7 +189,7 @@ namespace WpfProject
                     Transmission = "Manuál",
                     Fuel = "Benzín",
                     Speedometer = 156646,
-                    Engine = "1.4 T, 88kW",
+                    Engine = "1.4 T 88kW",
                     Url = "https://www.aaaauto.cz/cz/alfa-romeo-giulietta/car.html?id=394347607#make%5B0%5D=2&make%5B1%5D=130"
                 });
                 AllCars.Add(new Cars
