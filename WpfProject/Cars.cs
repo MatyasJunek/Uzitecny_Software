@@ -150,7 +150,7 @@ namespace WpfProject
                     Transmission = "Automat",
                     Fuel = "Diesel",
                     Speedometer = 83579,
-                    Engine = "530d GT, 190kW 4x4",
+                    Engine = "530d GT 190kW 4x4",
                     Url = "https://www.aaaauto.cz/cz/bmw-5gt/car.html?id=392944336#make=15&model=20033&ymin=2015&promo=gm"
                 });
                 AllCars.Add(new Cars
@@ -163,7 +163,7 @@ namespace WpfProject
                     Transmission = "Automat",
                     Fuel = "Benzín",
                     Speedometer = 3354,
-                    Engine = "3.8 V6, 419kW 4x4",
+                    Engine = "3.8 V6 419kW 4x4",
                     Url = "https://www.aaaauto.cz/cz/nissan-gt-r/car.html?id=392785695#promo=b"
                 });
                 AllCars.Add(new Cars
@@ -176,7 +176,7 @@ namespace WpfProject
                     Transmission = "Automat",
                     Fuel = "Diesel",
                     Speedometer = 168269,
-                    Engine = "D5, 147kW 4x4",
+                    Engine = "D5 147kW 4x4",
                     Url = "https://www.aaaauto.cz/cz/volvo-xc90/car.html?id=382823123#make=130&promo=gm"
                 });
                 AllCars.Add(new Cars
