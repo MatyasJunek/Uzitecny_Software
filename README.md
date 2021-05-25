@@ -8,12 +8,16 @@
 * Pro koho je dokument určený
   * Dokument je určený pro uživatele, kteří chtějí podrobnou zprávu o pragramu.
 * Odkazy na ostatní dokumenty
-  *   
+  * https://github.com/MatyasJunek/Uzitecny_Software/blob/master/SRS_README.md  
 * Všechny reálné způsoby použití
   * Hlavním využitím programu je srovnávání a přehledné prohlížení aut. Dá se také použít pro pamatování oblíbených vozidel, nebo pro automobilové nadšence.
+* Typy uživatelských rolí, „personas“
+  * V programu je pouze jedna uživatelská role.
+* Detaily, motivace, „živé“ příklady  
 * Vymezení rozsahu
   * V softwaru nebude zakomponováno automatické vyplnění informací pomocí odkazu.
 * Na co se nebude klást důraz
   * Důraz se nebude klást na vizuální dokonalost.
 * Pracocní tok
-  *      
+* Hlavní moduly
+  *         
