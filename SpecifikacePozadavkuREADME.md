@@ -22,7 +22,7 @@
     * Důraz se nebude klást na vizuální dokonalost.
 * Celková hrubá architektura
   * Pracocní tok
-    * Program by měl být jednoduchý a lehce použitelný 
+    * Program by měl být jednoduchý a lehce použitelný.
   * Hlavní moduly
     * Prvním modulem je samotný seznam, ve kterém si můžete listovat. Druhým je poměření aut, ve kterém zblízka vidíte dvě auta vedle sebe a jsou zvýrazněné jejich výhody na nevýhody. Třetím je okno pro přidání auta, kterým můžete rozšířit svůj seznam a poslední je úprava auta pro případnou opravu chyby, snížení ceny vozidla, nebo smazání položky ze seznamu.
   * Detaily
@@ -32,5 +32,5 @@
   * Všechny dohodnté principy
 * Otevřené otázky
   * Části, na kterých se zatím nedosáhlo shody
-    * Program postrádá obrázek k autu, není ale jisté, zda je nutné je dělat
+    * Program postrádá obrázek k autu, není ale jisté, zda je nutné je dělat.
   * Poznámky k realizaci    
