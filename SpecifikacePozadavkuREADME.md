@@ -32,5 +32,5 @@
   * Všechny dohodnté principy
 * Otevřené otázky
   * Části, na kterých se zatím nedosáhlo shody
-    * Program postrádá obrázek k autu, není ale jisté, jestli bude potřeba
+    * Program postrádá obrázek k autu, není ale jisté, zda je nutné je dělat
   * Poznámky k realizaci    
