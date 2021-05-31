@@ -4,7 +4,7 @@
 #### 25. 5. 2021
 * Úvod
   * Účel
-    * Program je pro každého, kdo hledá nové auto, nebo kdo přemýšlí o výhodné koupi.
+    * Program je pro každého, kdo hledá nové auto, nebo kdo přemýšlí o výhodné koupi. Je náhradou za zbytečné a pomalé otevírání a závírání oken prohlížeče, které Vám navíc zpomalují počítač.
   * Konvence dokumentu 
   * Pro koho je dokument určený
     * Dokument je určený pro uživatele, kteří chtějí podrobnou zprávu o pragramu.
@@ -24,7 +24,7 @@
   * Pracocní tok
     * Program by měl být jednoduchý a lehce použitelný.
   * Hlavní moduly
-    * Prvním modulem je samotný seznam, ve kterém si můžete listovat. Druhým je poměření aut, ve kterém zblízka vidíte dvě auta vedle sebe a jsou zvýrazněné jejich výhody na nevýhody. Třetím je okno pro přidání auta, kterým můžete rozšířit svůj seznam a poslední je úprava auta pro případnou opravu chyby, snížení ceny vozidla, nebo smazání položky ze seznamu.
+    * Prvním oknem je samotný seznam, ve kterém si můžete listovat. Druhým je poměření aut, ve kterém zblízka vidíte dvě auta vedle sebe a jsou zvýrazněné jejich výhody na nevýhody. Třetím je okno pro přidání auta, kterým můžete rozšířit svůj seznam a poslední je úprava auta pro případnou opravu chyby, snížení ceny vozidla, nebo smazání položky ze seznamu.
   * Detaily
     * Program se skládá až čtyř oken - seznam aut, porovnání, editace, přidání             
   * Všechny možné toky programu a jejich projevy
