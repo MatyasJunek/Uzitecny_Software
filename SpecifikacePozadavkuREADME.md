@@ -10,7 +10,7 @@
   * Pro koho je dokument určený
     * **Dokument je určený pro uživatele, kteří chtějí podrobnou zprávu o programu**. Může sloužit také jako návod, nebo jako základ pro vývojáře, kteří by chtěli program vylepšit.
   * Odkazy na ostatní dokumenty
-    * [SRS](https://github.com/MatyasJunek/Uzitecny_Software/blob/master/SRS_README.md)  
+    * [SRS](https://github.com/MatyasJunek/Uzitecny_Software/blob/master/SRS_README.md), [Nákres](https://github.com/MatyasJunek/Uzitecny_Software/blob/master/Specifications_Drawing.png)  
 * Scénáře
   * Všechny reálné způsoby použití
     * Hlavním využitím programu je **srovnávání a přehledné prohlížení aut před jejich nákupem**. Je možné ho také použít pro pamatování oblíbených vozidel, nebo pro automobilové nadšence. Je využitelný také jako základ pro tvorbu podobných programů ostatními vývojáři.
