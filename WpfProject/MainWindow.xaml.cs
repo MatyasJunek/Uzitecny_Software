@@ -68,7 +68,7 @@ namespace WpfProject
 
         private void CopyUrl_Click(object sender, RoutedEventArgs e)
         {    
-            Clipboard.SetDataObject(currentCar.Url.ToString());        
+            Clipboard.SetDataObject(currentCar.Url.ToString());           
         }
 
         private void AddCar_Click(object sender, RoutedEventArgs e)
